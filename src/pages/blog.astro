@@ -1,0 +1,22 @@
+---
+import { getCollection } from "astro:content";
+import H1 from "../components/H1.astro";
+import Main from "../components/Main.astro";
+import Layout from "../layouts/Layout.astro";
+
+const posts = await getCollection("posts");
+console.log(posts);
+---
+
+<Layout title="Games">
+    <Main>
+        <H1 text="Games" />
+        {
+            posts.map((post) => (
+                <a href={`/blog/${post.slug}`}>
+                    <h2>{post.data.title}</h2>
+                </a>
+            ))
+        }
+    </Main>
+</Layout>
