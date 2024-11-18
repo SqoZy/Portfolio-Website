@@ -2,10 +2,20 @@
 import H1 from "../components/H1.astro";
 import Main from "../components/Main.astro";
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
 ---
 
-<Layout title="Games">
+<Layout title="About">
     <Main>
-        <H1 text="Games" />
+        <H1 text="About" />
+        <a href="/" class="flex items-center">
+            <Image
+                src="/ProfileP.jpg"
+                width={200}
+                height={200}
+                alt="profile picture"
+                class="rounded-2xl aspect-thumbnail object-cover"
+            />
+        </a>
     </Main>
 </Layout>
