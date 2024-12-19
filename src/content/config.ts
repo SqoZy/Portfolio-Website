@@ -10,6 +10,13 @@ const postCollection = defineCollection({
     })
 })
 
+const mDcollection = defineCollection({
+    schema: z.object({
+        title: z.string(),
+    })
+})
+
 export const collections = {
     post: postCollection,
+    markDownPages: mDcollection,
 }

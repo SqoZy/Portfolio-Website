@@ -2,7 +2,13 @@
 import H1 from "../components/H1.astro";
 import Main from "../components/Main.astro";
 import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:markDownPages";
 import { Image } from "astro:assets";
+
+const pages = await getCollection("pages");
+const about = pages.find((page) => page.slug === "about");
+if (!about) throw new Error("About page not found");
+const { Content } = await about.render();
 ---
 
 <Layout title="About">
@@ -10,12 +16,15 @@ import { Image } from "astro:assets";
         <H1 text="About" />
         <a href="/" class="flex items-center">
             <Image
-                src="/ProfileP.jpg"
+                src={about.data.image}
                 width={200}
                 height={200}
                 alt="profile picture"
                 class="rounded-2xl aspect-thumbnail object-cover"
             />
         </a>
+        <div class="prose prose-2xl overflow-visible relative mb-20">
+            <Content />
+        </div>
     </Main>
 </Layout>

@@ -1,16 +1,19 @@
 ---
-import { getCollection } from "astro:content";
 import H1 from "../components/H1.astro";
 import Main from "../components/Main.astro";
-import PostList from "../components/PostList.astro";
 import Layout from "../layouts/Layout.astro";
+import { getEntryBySlug } from "astro:content";
 
-const posts = await getCollection("posts");
+const about = await getEntryBySlug("pages", "about");
+if (!about) throw new Error("About page not found");
+const { Content } = await about.render();
 ---
 
-<Layout title="Games">
+<Layout title="About">
     <Main>
-        <H1 text="Games" />
-        {posts.map((post) => <PostList posts={posts} />)}
+        <H1 text="About" />
+        <div class="prose prose-2xl overflow-visible relative mb-20">
+            <Content />
+        </div>
     </Main>
 </Layout>
