@@ -1,17 +1,18 @@
 ---
-import { getCollection } from "astro:content";
+import { getEntryBySlug } from "astro:content";
 import H1 from "../components/H1.astro";
 import Main from "../components/Main.astro";
 import Layout from "../layouts/Layout.astro";
 
-const posts = await getCollection("posts");
+const contact = await getEntryBySlug("pagedata", "contact");
+const { Content } = await contact.render();
 ---
 
 <Layout title="Contact">
     <Main>
         <H1 text="Contact" />
-            <h2 class="text-4xl text-zinc-900 mb-4 font-semibold inline-block">
-                Contact me at: <a href="mailto:" />
-
+        <div class="prose prose-2xl overflow-visible relative mb-20">
+            <Content />
+        </div>
     </Main>
 </Layout>

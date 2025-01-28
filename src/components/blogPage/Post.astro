@@ -14,7 +14,7 @@ const { post } = Astro.props;
 
 <article>
     <a
-        href={`/blog/${post.slug}`}
+        href={`/blogList/${post.slug}`}
         aria-label={`Read more about ${post.data.title}`}
     >
         <Image
@@ -32,7 +32,7 @@ const { post } = Astro.props;
     </div> -->
 
     <a
-        href={`/blog/${post.slug}`}
+        href={`/blogList/${post.slug}`}
         class="text-4xl text-zinc-900 mb-4 font-semibold inline-block"
     >
         {post.data.title}

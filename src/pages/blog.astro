@@ -2,15 +2,15 @@
 import { getCollection } from "astro:content";
 import H1 from "../components/H1.astro";
 import Main from "../components/Main.astro";
-import PostList from "../components/gamesPage/GameList.astro";
+import PostList from "../components/blogPage/PostList.astro";
 import Layout from "../layouts/Layout.astro";
 
-const posts = await getCollection("game");
+const posts = await getCollection("posts");
 ---
 
-<Layout title="Games">
+<Layout title="Blogs">
     <Main>
-        <H1 text="Games" />
+        <H1 text="Blogs" />
         <PostList posts={posts} />
     </Main>
 </Layout>
