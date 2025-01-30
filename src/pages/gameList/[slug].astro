@@ -31,16 +31,27 @@ const { Content } = await post.render();
 <Layout title={post.data.title}>
     <Main>
         <H1 text={post.data.title} />
-        <Image
-            src={post.data.image}
-            alt={post.data.title}
-            width={1024}
-            height={1024 / 1.5}
-            format="webp"
-            class="rounded-2xl shadow-xl mb-6 aspect-thumbnail object-cover"
-        />
-        <div class="prose  prose-2xl overflow-visible relative mb-20">
-        <Content />
+        {
+            post.slug === "spaceinvaders" ? (
+                <iframe
+                    src="/games/SpaceInvaders/index.html"
+                    width="800"
+                    height="600"
+                    class="border-0"
+                />
+            ) : (
+                <Image
+                    src={post.data.image}
+                    alt={post.data.title}
+                    width={1024}
+                    height={1024 / 1.5}
+                    format="webp"
+                    class="rounded-2xl shadow-xl mb-6 aspect-thumbnail object-cover"
+                />
+            )
+        }
+        <div class="prose prose-2xl overflow-visible relative mb-20">
+            <Content />
         </div>
     </Main>
 </Layout>
