@@ -1,5 +1,5 @@
 class Player {
-
+    
     constructor(x, y, width, height) {
         this.x = x;
         this.y = y;
@@ -18,6 +18,9 @@ class Player {
             : skeletonAsset ? this.height = 259
                 : knightAsset ? this.height = 258
                     : this.height = 222;
+
+        console.log(this.width);
+        console.log(this.height)
     }
 
 
@@ -25,7 +28,7 @@ class Player {
      * de functie "show" laat verschillende images zien op basis de player gekozen outfit
      * (adventurer, skeleton, or knight) en zijn acties (idle, hurt, or attacking).
      *
-     * @author Jordy Teunis
+     * Gemaakt door: Jordy Teunis
      *
      */
     draw() {

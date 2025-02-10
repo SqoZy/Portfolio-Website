@@ -1,5 +1,5 @@
 class TileGrid {
-
+    
 
     #tileSize;
     tiles;
@@ -23,12 +23,6 @@ class TileGrid {
         let BlueTileCount;
 
         //generate tile grid here and place tiles in the 2D #tile array.
-
-        /** De bovenstaande code genereert een raster van tegels met verschillende kleuren (groen, normaal, blauw,
-        * rood) op basis van willekeurige getallen. Het controleert ook op overeenkomende tegels in rijen en kolommen
-        * vervangt ze door tegels in verschillende kleuren.
-        * @author Jordy Teunis
-        */
         for (let x = 0; x < this.#width; x++) {
             for (let y = 0; y < this.#height; y++) {
                 //  window.innerWidth / 2 = y;

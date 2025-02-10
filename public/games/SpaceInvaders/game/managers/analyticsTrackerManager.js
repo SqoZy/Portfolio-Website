@@ -8,7 +8,7 @@ const localStorageDataKey = '3WayFighterGamePlayerUniqeCodeKey';
 
 /** De classe 'AnalyticsTrackerManager' is verantwoordelijk voor het beheren van het bijhouden van analyses en
 *   het creëren en ophalen van spelergegevens, het opslaan van spelergegevens.
-*
+*   
 */
 class AnalyticsTrackerManager {
 
@@ -52,7 +52,7 @@ class AnalyticsTrackerManager {
                 getPlayerData();
             }
             else {
-                console.log(`playerfound! ${playerUniquCode}`)
+                console.log(`playerfound!${playerUniquCode}`)
                 return
 
 

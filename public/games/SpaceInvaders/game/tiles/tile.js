@@ -83,6 +83,7 @@ class Tile {
                 tileGrid.getTileAtPosition(createVector((this.x - 2) * this.size, this.y * this.size)).type &&
                 this.type ==
                 tileGrid.getTileAtPosition(createVector((this.x - 1) * this.size, this.y * this.size)).type) {
+                console.log('left');
                 if (!further) {
                     this.checkTileType();
                     this.tileSpawnLeft();
@@ -99,6 +100,7 @@ class Tile {
                 tileGrid.getTileAtPosition(createVector((this.x + 2) * this.size, this.y * this.size)).type &&
                 this.type ==
                 tileGrid.getTileAtPosition(createVector((this.x + 1) * this.size, this.y * this.size)).type) {
+                console.log('right');
                 if (!further) {
                     this.checkTileType();
                     this.tileSpawnRight();
@@ -115,6 +117,7 @@ class Tile {
                 tileGrid.getTileAtPosition(createVector((this.x - 1) * this.size, this.y * this.size)).type &&
                 this.type ==
                 tileGrid.getTileAtPosition(createVector((this.x + 1) * this.size, this.y * this.size)).type) {
+                console.log('middleX');
                 if (!further) {
                     this.checkTileType();
                     this.tileSpawnMiddleX();
@@ -131,6 +134,7 @@ class Tile {
                 tileGrid.getTileAtPosition(createVector(this.x * this.size, (this.y - 2) * this.size)).type &&
                 this.type ==
                 tileGrid.getTileAtPosition(createVector(this.x * this.size, (this.y - 1) * this.size)).type) {
+                console.log('up');
                 if (!further) {
                     this.checkTileType();
                     this.tileSpawnUp();
@@ -147,6 +151,7 @@ class Tile {
                 tileGrid.getTileAtPosition(createVector(this.x * this.size, (this.y + 2) * this.size)).type &&
                 this.type ==
                 tileGrid.getTileAtPosition(createVector(this.x * this.size, (this.y + 1) * this.size)).type) {
+                console.log('down');
                 if (!further) {
                     this.checkTileType();
                     this.tileSpawnDown();
@@ -164,6 +169,7 @@ class Tile {
                 tileGrid.getTileAtPosition(createVector(this.x * this.size, (this.y - 1) * this.size)).type &&
                 this.type ==
                 tileGrid.getTileAtPosition(createVector(this.x * this.size, (this.y + 1) * this.size)).type) {
+                console.log('middleY');
                 if (!further) {
                     this.checkTileType();
                     this.tileSpawnMiddleY();
@@ -201,6 +207,7 @@ class Tile {
         if (this.type == 'blue') {
             enemyHealth -= 5;
             secondsOfGame += 5;
+            console.log('blue')
         }
         if (!playerHurt) {
             playerAttack = true;

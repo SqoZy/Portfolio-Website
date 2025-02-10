@@ -388,6 +388,7 @@ function touchEnded(event) {
                     knightAsset = true;
                 }
                 if (!knightUnlocked) {
+                    console.log(45345);
                     skeletonBlack = false;
                     knightBlack = true;
                     return
@@ -641,25 +642,32 @@ function touchEnded(event) {
             if (checkMatch3While) {
                 if (leftFurther) {
                     tileA.tileSpawnLeft();
+                    console.log('tilAleftverandert')
                 }
                 if (rightFurther) {
                     tileA.tileSpawnRight();
+                    console.log('tilArighttverandert')
                 }
                 if (middleXFurther) {
                     tileA.tileSpawnMiddleX();
+                    console.log('tilAmiddlexverandert')
                 }
                 if (upFurther) {
                     tileA.tileSpawnUp();
+                    console.log('tilAupverandert')
                 }
                 if (downFurther) {
                     tileA.tileSpawnDown();
+                    console.log('tilAdownverandert')
                 }
                 if (middleYFurther) {
                     tileA.tileSpawnMiddleY();
+                    console.log('tilAmiddleyverandert')
                 }
             }
             whileTimer--;
             if (whileTimer == 0) {
+                console.log('whiletimer')
                 checkMatch3While = true;
                 further = false;
                 leftFurther = false;
@@ -676,6 +684,7 @@ function touchEnded(event) {
                 whileTimer = 10;
                 return
             }
+            console.log('while')
         }
         whileTimer = 10;
         checkMatch3While = true;
@@ -707,26 +716,33 @@ function touchEnded(event) {
             }
             if (checkMatch3While) {
                 if (leftFurther) {
+                    console.log('tilBleftverandert')
                     tileB.tileSpawnLeft();
                 }
                 if (rightFurther) {
+                    console.log('tilBrighttverandert')
                     tileB.tileSpawnRight();
                 }
                 if (middleXFurther) {
+                    console.log('tilBmiddlexverandert')
                     tileB.tileSpawnMiddleX();
                 }
                 if (upFurther) {
+                    console.log('tilBupverandert')
                     tileB.tileSpawnUp();
                 }
                 if (downFurther) {
+                    console.log('tilBdownverandert')
                     tileB.tileSpawnDown();
                 }
                 if (middleYFurther) {
+                    console.log('tilBmiddleyverandert')
                     tileB.tileSpawnMiddleY();
                 }
             }
             whileTimer--;
             if (whileTimer == 0) {
+                console.log('whiletimer')
                 checkMatch3While = true;
                 further = false;
                 leftFurther = false;
@@ -759,6 +775,7 @@ function touchEnded(event) {
 
         moves -= 1;
 
+        console.log(tileGrid.tiles)
     }
 }
 function displaymoves() {

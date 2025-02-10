@@ -1,9 +1,11 @@
 function Level_1(){
 
+
     clear();
 
     imageMode(CORNER)
     background(gameManager.getImage("treebackground"));
+
 
     textSize(50)
     fill(123, 158, 63)

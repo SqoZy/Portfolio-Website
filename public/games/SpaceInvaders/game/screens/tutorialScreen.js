@@ -1,9 +1,9 @@
 /**
  * De functie "TutorialScreen" laat een tutorial scherm zien met text en images om uit te leggen wat alles doet in de game.
- * @author Jordy Teunis
+ *
  */
 function TutorialScreen() {
-
+    
     clear();
 
     imageMode(CORNER)
@@ -68,6 +68,10 @@ function TutorialScreen() {
     noFill();
     rect(width - 230, 1700, 200, 20);
 
+
+
     buttonTutorialStart = new ButtonStart(width / 2, height - 150);
     buttonTutorialStart.show();
+
+
 }

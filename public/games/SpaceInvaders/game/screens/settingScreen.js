@@ -1,8 +1,3 @@
-/**
-* De functie 'SettingScreen' geeft een instellingenscherm weer met een achtergrondafbeelding, een titel en een achterkant
-* knop, een muziekknop en een volumeschuifregelaar.
- * @author Jordy Teunis
- */
 function SettingScreen(){
 
     clear();

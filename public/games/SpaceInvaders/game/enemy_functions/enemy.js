@@ -11,7 +11,6 @@ class Enemy {
 
     /**
      * de draw functie tekent een image zien van een monster.
-     * @author Jordy Teunis
      */
     draw() {
         if (!enemyHurt) {

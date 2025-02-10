@@ -1,8 +1,3 @@
-/**
-* De StartScreen-functie geeft het startscherm van een game weer, inclusief achtergrondafbeeldingen en speler
-* karakteropties.
-* @author Jordy Teunis
-*/
 function StartScreen() {
 
     clear();

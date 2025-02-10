@@ -1,8 +1,3 @@
-/**
- * De functie "PauzeScreen" laat een pause screen zien met een background image, text, buttons, en een
- * slider om de volume van de muziek aan te passen.
- * @author Jordy Teunis
- */
 function PauzeScreen(){
 
     clear();

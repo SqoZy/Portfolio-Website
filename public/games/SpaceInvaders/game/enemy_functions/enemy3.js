@@ -1,7 +1,7 @@
 /**
 * De Enemy3 class is een subclass van de Enemy class die een slime image heeft met een specifieke
 * width en height.
-* @author ramon en Jordy
+* @author ramon en jordy
 */
 class Enemy3 extends Enemy {
     constructor(x, y, width, height) {
