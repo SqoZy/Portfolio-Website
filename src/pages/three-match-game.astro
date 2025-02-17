@@ -1,0 +1,53 @@
+---
+---
+
+<div class="game-container">
+    <button class="back-button" onclick="window.history.back()">
+        <img src="/games/feelaayiilaa38/game/assets/images/buttons/buttonback.png" alt="Back" class="back-button-image" />
+    </button>
+    <iframe
+        src="/games/feelaayiilaa38/game/index.html"
+        class="responsive-iframe"></iframe>
+</div>
+
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden; /* Ensure no scrollbars */
+    }
+
+    .game-container {
+        position: relative;
+        width: 100vw; /* Full viewport width */
+        height: 100vh; /* Full viewport height */
+        overflow: hidden; /* Ensure no scrollbars */
+    }
+
+    .back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 0;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 10; /* Ensure the button is above the iframe */
+    }
+
+    .back-button-image {
+        width: 222px; /* Adjust the size as needed */
+        height: 108px; /* Adjust the size as needed */
+    }
+
+    .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+</style>

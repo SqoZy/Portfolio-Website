@@ -7,10 +7,24 @@ import H1 from "../components/H1.astro";
 <Layout title="Space Invaders">
     <Main>
         <H1 text="Space Invaders" />
-        <iframe
-            src="/games/feelaayiilaa38/game/index.html"
-            width="800"
-            height="600"
-            class="border-0"></iframe>
+        <div class="flex-container">
+            <iframe
+                src="/games/feelaayiilaa38/game/index.html"
+                class="responsive-iframe"></iframe>
+        </div>
     </Main>
 </Layout>
+
+<style>
+    .flex-container {
+        display: flex;
+        justify-content: flex-end; /* Align the iframe to the right */
+        padding-right: 20px; /* Add space between the iframe and the right side */
+    }
+
+    .responsive-iframe {
+        width: 50%; /* Adjust the width as needed */
+        height: 50vh; /* Adjust the height as needed */
+        border: 0;
+    }
+</style>
