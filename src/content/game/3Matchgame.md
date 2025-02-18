@@ -11,6 +11,8 @@ A fun and challenging 3-match game made during my first year college years. This
 ## 3 Match Game
 
 You can play my game to press the link to the game and you can play it using 'inspect element' in your browser or using your phone.
+<br>
+You can play my game by clicking [here](/three-match-game).
 
 The objective of the game is to match three or more tiles of the same type to score points. The game features various levels with increasing difficulty and special tiles that add unique gameplay mechanics.
 
