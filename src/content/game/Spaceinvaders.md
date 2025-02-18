@@ -2,7 +2,7 @@
 categories: ["Games"]
 date: 08/10/2021
 featured: false
-image: /images/SpaceInvaders.png
+image: ./images/SpaceInvaders.png
 title: Space Invaders
 ---
 

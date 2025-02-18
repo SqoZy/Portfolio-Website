@@ -2,7 +2,7 @@
 categories: ["Games"]
 date: 08/10/2021
 featured: false
-image: /images/3MatchGame.png
+image: ./images/3MatchGame.png
 title: 3 Match Game
 ---
 
