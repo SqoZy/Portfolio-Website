@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# ignore .git directory in 3MatchGame
+public/games/3MatchGame/.git
