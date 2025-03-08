@@ -1,0 +1,3 @@
+[submodule "public/games/3MatchGame"]
+	path = public/games/3MatchGame
+	url = https://github.com/SqoZy/3MatchGame
